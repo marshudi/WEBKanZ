@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WEB KanZ - Coming Soon</title>
-  <!-- Favicon (replace 'favicon.png' with your image path) -->
+  <!-- Favicon (replace with your image path) -->
   <link rel="icon" href="/Logo/logoWhiteStrokeBlackResized.png" type="image/png" />
   <!-- Meta Data -->
   <meta name="description" content="WEB KanZ is a modern digital platform that empowers your journey with innovative features and exclusive Web Tours. Discover unique travel experiences, private tours, and engaging digital content that connect you to destinations like Muscat, Nizwa, Wadi Shab, and the stunning Bimmah Sinkhole. Explore, connect, and embark on unforgettable adventures with WEB KanZ - Your Way to Explore, Connect & Stay." />
@@ -13,7 +13,7 @@
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="WEB KanZ - Coming Soon" />
   <meta property="og:description" content="WEB KanZ is your gateway to exclusive Web Tours and digital travel experiences. Stay tuned as we launch innovative tours and connect you with unique destinations." />
-  <meta property="og:image" content="favicon.png" />
+  <meta property="og:image" content="/Logo/logoWhiteStrokeBlackResized.png" />
   <meta property="og:url" content="https://www.webkanz.com" />
   <meta property="og:type" content="website" />
   
@@ -60,6 +60,18 @@
       40% { opacity: 1; }
       100% { opacity: 0; }
     }
+
+    /* Custom wiggle animation for the Web Tours & Activities links */
+@keyframes wiggle {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(1px) rotate(1deg); }
+  50% { transform: translateX(0) rotate(0deg); }
+  75% { transform: translateX(-1px) rotate(-1deg); }
+}
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
   </style>
 </head>
 <body class="bg-gradient-to-r from-[#1E3A8A] via-[#4B0082] to-[#000000] flex flex-col items-center justify-center min-h-screen">
@@ -71,9 +83,9 @@
   <div class="max-w-xl mx-auto text-center p-8 bg-gray-900 rounded-xl shadow-2xl mt-4">
     <!-- Logo and Branding -->
     <div class="mb-6">
-      <!-- Logo Placeholder with continuous rotate animation -->
+      <!-- Logo with continuous rotate animation -->
       <div class="w-24 h-24 mx-auto mb-4 bg-gray-800 rounded-full flex items-center justify-center rotate">
-        <span class="text-2xl font-bold text-blue-700"><img src="/Logo/logoWhiteStrokeBlackResized.png" ></span>
+        <img src="/Logo/logoWhiteStrokeBlackResized.png" alt="WEB KanZ Logo" class="w-full h-full object-contain">
       </div>
       <h1 class="text-4xl font-extrabold text-white fade-in">WEB KanZ</h1>
       <p class="text-xl text-gray-300 mt-2 fade-in">"Your Way to Explore, Connect & Stay."</p>
@@ -114,8 +126,6 @@
       <a href="https://instagram.com/webkanz" class="flex items-center gap-2 px-4 py-2 bg-pink-700 text-white rounded-full transition transform hover:scale-105 hover-rotate">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.056 2.003.246 2.472.415a4.92 4.92 0 0 1 1.77 1.02 4.92 4.92 0 0 1 1.02 1.77c.169.469.359 1.266.415 2.472.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.206-.246 2.003-.415 2.472a4.902 4.902 0 0 1-1.02 1.77 4.902 4.902 0 0 1-1.77 1.02c-.469.169-1.266.359-2.472.415-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.056-2.003-.246-2.472-.415a4.916 4.916 0 0 1-1.77-1.02 4.916 4.916 0 0 1-1.02-1.77c-.169-.469-.359-1.266-.415-2.472-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.056-1.206.246-2.003.415-2.472a4.902 4.902 0 0 1 1.02-1.77 4.902 4.902 0 0 1 1.77-1.02c.469-.169 1.266-.359 2.472-.415C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.741 0 8.332.013 7.052.072 5.775.131 4.807.335 4.042.635a6.92 6.92 0 0 0-2.51 1.641A6.92 6.92 0 0 0 .635 4.042C.335 4.807.131 5.775.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.059 1.277.263 2.245.563 3.01a6.92 6.92 0 0 0 1.641 2.51 6.92 6.92 0 0 0 2.51 1.641c.765.3 1.733.504 3.01.563C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.277-.059 2.245-.263 3.01-.563a6.92 6.92 0 0 0 2.51-1.641 6.92 6.92 0 0 0 1.641-2.51c.3-.765.504-1.733.563-3.01.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.059-1.277-.263-2.245-.563-3.01A6.92 6.92 0 0 0 20.958.635 6.92 6.92 0 0 0 18.448.072c-.765-.3-1.733-.504-3.01-.563C15.668.013 15.259 0 12 0z"/>
-          <path d="M12 5.838a6.162 6.162 0 1 0 6.162 6.162A6.169 6.169 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 4-4 4.005 4.005 0 0 1-4 4z"/>
-          <circle cx="18.406" cy="5.594" r="1.44"/>
         </svg>
         <span>WEB KanZ</span>
       </a>
@@ -152,48 +162,52 @@
       </a>
     </div>
     
-    <!-- Additional Web Tours / Activity Links Section -->
-    <div class="mt-8 border-t border-gray-700 pt-4">
-      <h3 class="text-xl font-bold text-white mb-2">Web Tours & Activities</h3>
-      <ul class="text-left text-gray-300 space-y-1">
-        <li>
-          <a href="https://www.tripadvisor.com/AttractionProductReview-g1940497-d26868854-Full_Day_Private_Tour_to_Wadi_Shab_and_Bimmah_Sinkhole-Muscat_Muscat_Governorate.html" class="hover:underline">
-            Full Day Private Tour to Wadi Shab and Bimmah Sinkhole – Muscat
-          </a>
-        </li>
-        <li>
-          <a href="https://www.tripadvisor.com/AttractionProductReview-g1940497-d27407734-AMOUAGE_Full_Day_Private_Tour_to_Nizwa_and_Jebel_Akhdar-Muscat_Muscat_Governorate.html" class="hover:underline">
-            AMOUAGE Full Day Private Tour to Nizwa and Jebel Akhdar – Muscat
-          </a>
-        </li>
-        <li>
-          <a href="https://www.getyourguide.com/nizwa-l122780/amouage-full-day-private-trip-to-nizwa-and-al-jabal-akhdar-t604350/?utm_source=getyourguide&utm_medium=sharing&utm_campaign=activity_details" class="hover:underline">
-            Check out this activity on GetYourGuide! (Nizwa Trip)
-          </a>
-        </li>
-        <li>
-          <a href="https://www.getyourguide.com/muscat-l233/muscat-full-day-wadi-shab-bimmah-sinkhole-tour-with-lunch-t571959/?utm_source=getyourguide&utm_medium=sharing&utm_campaign=activity_details" class="hover:underline">
-            Check out this activity on GetYourGuide! (Muscat Tour)
-          </a>
-        </li>
-      </ul>
-      <!-- Bracket after the links -->
-      <div class="text-right text-gray-500 text-2xl"></div>
-      <div class="mt-8 border-t border-gray-700 pt-4">
+<!-- Additional Web Tours / Activity Links Section as Buttons with Wiggle -->
+<div class="mt-8 border-t border-gray-700 pt-4">
+  <h3 class="text-xl font-bold text-white mb-4">Web Tours & Activities</h3>
+  <div class="flex flex-col items-center gap-4">
+    <button type="button" onclick="window.location.href='https://www.tripadvisor.com/AttractionProductReview-g1940497-d26868854-Full_Day_Private_Tour_to_Wadi_Shab_and_Bimmah_Sinkhole-Muscat_Muscat_Governorate.html'" class="w-full inline-block px-6 py-2 bg-gray-800 text-white rounded-full text-center transition transform hover:scale-105 hover:bg-gray-700 animate-wiggle">
+      Full Day Private Tour to Wadi Shab and Bimmah Sinkhole – Muscat
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+    <button type="button" onclick="window.location.href='https://www.tripadvisor.com/AttractionProductReview-g1940497-d27407734-AMOUAGE_Full_Day_Private_Tour_to_Nizwa_and_Jebel_Akhdar-Muscat_Muscat_Governorate.html'" class="w-full inline-block px-6 py-2 bg-gray-800 text-white rounded-full text-center transition transform hover:scale-105 hover:bg-gray-700 animate-wiggle">
+      AMOUAGE Full Day Private Tour to Nizwa and Jebel Akhdar – Muscat
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+    <button type="button" onclick="window.location.href='https://www.getyourguide.com/nizwa-l122780/amouage-full-day-private-trip-to-nizwa-and-al-jabal-akhdar-t604350/?utm_source=getyourguide&utm_medium=sharing&utm_campaign=activity_details'" class="w-full inline-block px-6 py-2 bg-gray-800 text-white rounded-full text-center transition transform hover:scale-105 hover:bg-gray-700 animate-wiggle">
+      Check out this activity on GetYourGuide! (Nizwa Trip)
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+    <button type="button" onclick="window.location.href='https://www.getyourguide.com/muscat-l233/muscat-full-day-wadi-shab-bimmah-sinkhole-tour-with-lunch-t571959/?utm_source=getyourguide&utm_medium=sharing&utm_campaign=activity_details'" class="w-full inline-block px-6 py-2 bg-gray-800 text-white rounded-full text-center transition transform hover:scale-105 hover:bg-gray-700 animate-wiggle">
+      Check out this activity on GetYourGuide! (Muscat Tour)
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+  
       <!-- Inquiry Section with Bracket, Text, and Animated Email Button -->
-      <div class="mt-4 text-center">
-        <br>
-        <span class="text-gray-300">If you have any query regarding our services, send us a mail</span>
-        <br>
-        <br>
-        <a href="mailto:info@webkanz.com" class="inline-block mt-2 px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition animate-bounce">
-          <!-- Envelope Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 5.333-8-5.333V6h16zM4 18V9.489l7.447 4.962a1 1 0 0 0 1.106 0L20 9.489V18H4z"/>
-          </svg>
-          Email
-        </a>
-    </div>
+      <div class="mt-8 border-t border-gray-700 pt-4">
+        <div class="text-center">
+          <br>
+          <span class="text-gray-300">If you have any query regarding our services, send us a mail</span>
+          <br>
+          <br>
+          <a href="mailto:info@webkanz.com" class="inline-block px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition animate-bounce">
+            <!-- Envelope Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 5.333-8-5.333V6h16zM4 18V9.489l7.447 4.962a1 1 0 0 0 1.106 0L20 9.489V18H4z"/>
+            </svg>
+            Email
+          </a>
+          <br>
+        </div>
       </div>
     </div>
   </div>

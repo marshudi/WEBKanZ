@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+  <TITLE>Email Signature</TITLE>
+  <META content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    :root {
+      color-scheme: light dark;
+    }
+    /* Base styles for small screens (default) */
+    body, table, td, a, span, p {
+      background: transparent !important;
+      color: #000000 !important;
+      line-height: 1.5 !important; /* Global line spacing */
+    }
+    @media (prefers-color-scheme: dark) {
+      body, table, td, a, span, p {
+        background: transparent !important;
+        color: #FFFFFF !important;
+      }
+    }
+    /* Default image sizes for responsiveness */
+    img.logo {
+      width: 100%;
+      max-width: 67px;
+      height: auto;
+      border: 0;
+      border-radius: 50%;
+    }
+    img.social {
+      width: 16px;
+      max-width: 100%;
+      height: auto;
+      border: 0;
+      display: block;
+    }
+    /* Social media interactivity and spacing across all screen sizes */
+    a.social-link {
+      margin-right: 8px !important;
+      display: inline-block !important;
+      transition: transform 0.3s ease, margin 0.3s ease;
+    }
+    a.social-link:hover {
+      transform: scale(1.1);
+      margin-right: 12px !important;
+    }
+    /* Medium screen adjustments (approx. 1.5× scale) */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      body { font-size: 15pt !important; }
+      table { padding: 15px !important; }
+      img.logo { max-width: 100px !important; }
+      img.social { width: 24px !important; height: 24px !important; }
+    }
+    /* Large screen adjustments (2× scale) */
+    @media (min-width: 1200px) {
+      body { font-size: 22pt !important; }
+      table { padding: 25px !important; }
+      img.logo { max-width: 134px !important; }
+      img.social { width: 32px !important; height: 32px !important; }
+    }
+    
+    /* ADDED: Adjust layout for screens below 768px */
+    @media (max-width: 767px) {
+      /* Make the row cells stack vertically so the logo is on top */
+      table, tbody, tr {
+        display: block !important;
+        width: 100% !important;
+      }
+      /* Logo cell becomes a full-width block, so it stays on top */
+      td[style="padding: 0;"] {
+        display: block !important;
+        width: 100% !important;
+        min-width: auto !important;
+        margin-bottom: 10px !important;
+        position: relative !important; /* For the vertical line if needed */
+      }
+      
+      /* This text cell now appears below the logo cell */
+      td[style="min-width:250px; padding-left: 10px; vertical-align: top;"] {
+        display: block !important;
+        width: 100% !important;
+        min-width: auto !important;
+        /* Extra indentation for smaller screens */
+        padding-left: 20px !important;
+      }
+      /* Hide the extra spacer columns so the layout doesn't break */
+      td[style="width:10px; border-right:1px solid #4B5563;"],
+      td[style="width:10px;"] {
+        display: none !important;
+      }
+      /* Logo can scale down if needed */
+      img.logo {
+        max-width: 60px !important;
+      }
+      /* Increase social icon size on small screens */
+      img.social {
+        width: 24px !important;
+        height: 24px !important;
+      }
+    }
+  </style>
+</HEAD>
+<BODY style="font-family:Arial, sans-serif; padding: 10px;">
+
+  <!-- Horizontal line at the top -->
+  <hr style="border: 0; border-top: 1px solid #ccc; margin-bottom: 10px;">
+
+  <table style="width:100%; font-family:Arial, sans-serif; border-radius: 8px; padding: 10px;" cellpadding="0" cellspacing="0" border="0">
+    <tbody>
+      <tr>
+        <!-- Logo container -->
+        <td style="padding: 0;">
+          <p style="margin:0; padding:0;">
+            <a href="https://WEBKanZ.com/" target="_blank">
+              <img class="logo" src="https://raw.githubusercontent.com/marshudi/WEBKanZ/refs/heads/main/Logo/logoWhiteStrokeBlackResized.png" alt="WEB KanZ Logo">
+            </a>
+          </p>
+        </td>
+        <!-- Left text cell -->
+        <td style="min-width:250px; padding-left: 10px; vertical-align: top;">
+          <span style="font-family:Arial, sans-serif; font-weight:bold;">%%FirstName%% %%LastName%%</span>
+          <p style="margin:0; padding:0; font-family:Arial, sans-serif;">
+            <a href="https://WEBKanZ.com/" target="_blank" style="text-decoration:none; font-weight:bold;">
+              <span style="text-decoration:none; font-family:Arial, sans-serif; font-weight:bold;">WEBKanZ.com</span>
+            </a>
+          </p>
+          <!-- Slogan -->
+          <p style="margin:4px 0; font-family:Arial, sans-serif; display:inline-block; vertical-align:middle;">
+            Your Way to Explore, Connect & Stay.
+          </p>
+        </td>
+        <!-- Spacer vertical line (unchanged) -->
+        <td style="width:10px; border-right:1px solid #4B5563;"></td>
+        <td style="width:10px;"></td>
+        <!-- Right contact cell -->
+        <td style="min-width:250px; padding-left: 10px; vertical-align: top;">
+          <p style="font-family:Arial, sans-serif; padding:0; margin-bottom:0;">
+            <span style="font-family:Arial, sans-serif; white-space: nowrap;">
+              <span style="opacity: 0.7;"><strong>E:</strong></span>
+              <a href="mailto:%%Email%%" style="text-decoration:none; opacity: 0.7;">
+                <span style="text-decoration:none; font-family:Arial, sans-serif; opacity: 0.7;">%%Email%%</span>
+              </a>
+              <br>
+            </span>
+            <span style="white-space: nowrap;">
+              <span style="opacity: 0.7;"><strong>T:</strong></span>
+              <span style="opacity: 0.7;"> +968 %%PhoneNumber%%</span>
+              <br>
+            </span>
+            <span style="white-space: nowrap;">
+              <span style="opacity: 0.7;"><strong>A:</strong></span>
+              <span style="opacity: 0.7;"> Oman, Muscat, Al Seeb</span>
+            </span>
+          </br></br>
+            <p style="margin:4px 0; padding:0; display:inline-block; vertical-align:middle;">
+              <a class="social-link" href="https://twitter.com/webkanz" target="_blank" rel="noopener" style="background-color:#1F2937; border: 1px solid #374151; border-radius:5px; padding:4px;">
+                <img class="social" src="https://www.mail-signatures.com/signature-generator/img/templates/short/tt.png" alt="Twitter">
+              </a>
+              <a class="social-link" href="https://www.youtube.com/@WebKanZ" target="_blank" rel="noopener" style="background-color:#1F2937; border: 1px solid #374151; border-radius:5px; padding:4px;">
+                <img class="social" src="https://www.mail-signatures.com/signature-generator/img/templates/short/yt.png" alt="YouTube">
+              </a>
+              <a class="social-link" href="https://www.linkedin.com/company/webkanz" target="_blank" rel="noopener" style="background-color:#1F2937; border: 1px solid #374151; border-radius:5px; padding:4px;">
+                <img class="social" src="https://www.mail-signatures.com/signature-generator/img/templates/short/ln.png" alt="LinkedIn">
+              </a>
+              <a class="social-link" href="https://www.instagram.com/webkanz/" target="_blank" rel="noopener" style="background-color:#1F2937; border: 1px solid #374151; border-radius:5px; padding:4px;">
+                <img class="social" src="https://www.mail-signatures.com/signature-generator/img/templates/short/it.png" alt="Instagram">
+              </a>
+              <a class="social-link" href="https://wa.me/96895911954" target="_blank" rel="noopener" style="background-color:#1F2937; border: 1px solid #374151; border-radius:5px; padding:4px;">
+                <img class="social" src="https://www.mail-signatures.com/signature-generator/img/templates/short/wa.png" alt="WhatsApp">
+              </a>
+              <a class="social-link" href="https://www.snapchat.com/add/webkanz/" target="_blank" rel="noopener" style="background-color:#1F2937; border: 1px solid #374151; border-radius:5px; padding:4px;">
+                <img class="social" src="https://www.mail-signatures.com/signature-generator/img/templates/short/sc.png" alt="Snapchat">
+              </a>
+            </p>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</BODY>
+</HTML>
